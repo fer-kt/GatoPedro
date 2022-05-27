@@ -1,0 +1,230 @@
+/* Fuente provisoria!! */
+@font-face {
+    font-family: 'Bad-Boys';
+    src:url('../assets/fonts/Bad-Boys.ttf.woff') format('woff'),
+        url('assets/fonts/Bad-Boys.ttf.svg') format('svg'),
+        url('assets/fonts/Bad-Boys.ttf.eot') format('embedded-opentype'); 
+    font-weight: normal;
+    font-style: normal;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+*{
+    margin:0;
+    padding: 0;
+    text-decoration: none;
+}
+body{
+    background-color: black;
+    color: #e6e6e6;
+}
+h1, h2{
+    
+    font-family: 'Bad-Boys', serif;
+    font-size: 4rem;
+    text-shadow: 2px 5px 0px #535353;
+    letter-spacing: 0.5rem;
+    text-align: center;
+    
+    
+    
+}
+header img{
+    margin-left: auto;
+    margin-right: auto;
+    display: block; 
+
+}
+
+.nav__li{
+    display: flex;
+    justify-content: flex-end;
+    text-decoration: none;
+    list-style: none;
+    
+}
+.nav__li li{
+    margin: 0.4rem;
+}
+main{
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+   
+}
+main article{
+    margin: 2rem;
+    flex-direction: column;
+    flex-wrap: wrap;
+    
+}
+main img{
+    height: 40rem;
+    width: 20rem;
+   
+}
+footer p {
+    display: inline-block;
+    margin: 0 1rem;
+}
+.footer__icons{
+    font-size: 2rem;
+    margin-right: 1rem;
+    
+}
+
+
+.card__estilo div{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+/* grid */
+
+/*  responsive Movil - sólo flex column*/
+@media (max-width: 480px){
+/* oculto logo de header hasta tener listo el logo redimensionado para movil */
+    header img{
+        display: none;
+    }
+   .card__estilo img{
+    width: 400px;
+   }
+    .card__estilo{    
+           
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: flex-start;
+    }
+    .gridFoto{
+        display: none;
+    }
+    .gridMain {  
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 0px 5px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "gridTexto gridTexto "
+          "gridFooter gridFooter";
+      }
+
+      .mainAbout{
+          display: flex;
+          flex-direction: column;
+      }
+
+}
+/* responsive Tablet */
+@media (min-width: 768px){
+    header img{
+        display: block;
+    }
+   
+    .card__estilo div{
+        display: flex;
+        flex-direction: column;
+    }
+    .section__cards{
+       display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr ;
+      gap: 0px 0px;
+      grid-auto-flow: row;
+      grid-template-areas:
+      "gridDorada gridIpa"
+      "gridIrish gridScottish";
+    }
+
+
+
+
+
+}
+
+/* responsive PC */
+@media (min-width:1024px) {
+   
+    
+    .card__estilo{
+        width: 700px;
+        height: 600px;    
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .gridMain {  
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 0px 5px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "gridFoto gridTexto gridTexto"
+          "gridFoto gridTexto gridTexto"
+          "gridFoto gridFooter gridFooter";
+      }
+
+      .section__cards{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      gap: 0px 0px;
+      grid-auto-flow: row;
+      grid-template-areas:
+        "gridDorada gridIpa"
+        "gridIrish gridScottish";
+    }
+
+      .gridDorada { 
+        grid-area: gridDorada;
+      
+      }
+      
+      .gridIpa { 
+        grid-area: gridIpa; 
+      }
+      
+      .gridIrish { 
+        grid-area: gridIrish; 
+      }
+      
+      .gridScottish { 
+        grid-area: gridScottish;
+      }
+
+} 
+
+
+  
+  .gridFoto {
+     grid-area: gridFoto; 
+     
+    }
+  
+  .gridTexto { 
+      grid-area: gridTexto;
+             
+    }
+  
+  .gridFooter { 
+      grid-area: gridFooter;
+          }
+  
+
+
+
+
+
+
+      
