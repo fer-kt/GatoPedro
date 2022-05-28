@@ -121,6 +121,9 @@ footer p {
 /*  media query movil  un sólo flex en columna*/
 
 @media (max-width: 580px) {
+  header img{
+    display:none
+  }
   .section__cards {
     display: flex;
     justify-content: center;
