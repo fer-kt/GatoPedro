@@ -35,6 +35,11 @@ header img {
   display: block;
 }
 
+.mainAbout{
+  margin: 0 auto;
+  width: 90%;
+}
+
 .nav__li {
   display: flex;
   justify-content: flex-end;
@@ -75,6 +80,8 @@ footer p {
 /*              GRIDS              */
 
 .gridMain {
+  margin: 0 auto;
+  width: 90%;
   display: grid;
   grid-template-areas:
     "foto titulo"
@@ -91,6 +98,7 @@ footer p {
 }
 
 .gridTexto {
+  margin: 2rem;
   grid-area: texto;
 }
 
@@ -144,7 +152,7 @@ footer p {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  width: 70%
+  max-width: fit-content;
   
 }
 .logo{
