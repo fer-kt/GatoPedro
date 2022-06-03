@@ -4,56 +4,70 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous"/>
     <link rel="stylesheet" href="../style/style.css" />
-    <script
-      src="https://kit.fontawesome.com/8bf0e23e3a.js"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://kit.fontawesome.com/8bf0e23e3a.js" crossorigin="anonymous"></script>
     <title>Contacto</title>
   </head>
   <body>
     <header>
       <img src="../assets/Nuevo proyecto (1).png" alt="banner de gato pedro" />
-      <ul class="nav__li">
-        <li><a href="../home.html">Inicio</a></li>
-        <li><a href="../home.html#estilos"> Nuestros estilos </a></li>
-        <li><a href="./about.html">Sobre nosotros</a></li>
-        <li><a href="./contacto.html">Contacto </a></li>
-      </ul>
+      <nav class="navbar navbar-expand-lg bg-light mb-3">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../home.html">Inicio</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../home.html#estilos"> Nuestros estilos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./about.html">Sobre nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./contacto.html">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </header>
 
-    <main class="mainContacto">
-      <form action="" class="formContacto">
-        <div class="formCampo">
-          <label for="correo"> Su e-mail:
-            <input type="email" name="formEmail" id="correo" />
-          </label>
+
+
+    <div class="col-md-4 center ">
+      <form>
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Email: </label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        </div>
+          
+        <div class="mb-3">
+          <label for="nombre" class="form-label">Nombre: </label>
+          <input type="password" class="form-control" id="nombre">
         </div>
 
-        <div class="formCampo">
-          <label for="nombre">Nombre:
-            <input type="text" name="formNombre" id="nombre" />
-          </label>
+        <div class="mb-3">
+          <label for="mensaje" class="form-label">Mensaje: </label>          
+          <input type="text" class="form-control" id="nombre">
         </div>
-
-        <div class="formCampo">
-          <label for="mensaje">Mensaje:
-
-            <textarea name="formMensaje" id="mensaje" cols="30" rows="10"></textarea>
-          </label>
+        <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">Recibir información</label>
         </div>
-
-        <button type="submit">Enviar Formulario</button>
-        <button type="reset">Limpiar formulario</button>
-        <label for="newsletter">Recibir información importante por e-mail:
-          <input type="checkbox" name="newsletter" id="newsletter" />
-        </label>
+        <button type="submit" class="btn btn-secondary">Enviar</button>
       </form>
-    </main>
+    </div>
+
+  
     <footer>
         <p>Seguinos en nuestras redes sociales</p>
         <a class="footer__icons" href="https://www.instagram.com/gatopedrobeer/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
         <a class="footer__icons" href="https://www.facebook.com/GatoPedroBeer" target="_blank"><i class="fa-brands fa-facebook-square"></i></a>
       </footer>
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
   </body>
 </html>
