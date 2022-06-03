@@ -195,3 +195,11 @@ footer p {
 .bg-gris {
   background-color: #535353;
 }
+
+.texto-blanco{
+  color: #e6e6e6;
+  font-family: "Bad-Boys", serif;
+  font-size: 1.5rem;  
+  letter-spacing: 0.5rem;
+  text-align: center;
+}
