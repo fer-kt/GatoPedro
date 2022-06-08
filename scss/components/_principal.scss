@@ -1,0 +1,16 @@
+body {
+    background-color: black;
+    color: $color-principal;
+        h1, h2 {
+        font-family: "Bad-Boys", serif;
+        font-size: 4rem;
+        text-shadow: 2px 5px 0px $color-secundario;
+        letter-spacing: 0.5rem;
+        text-align: center;
+        }
+        header img {
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+          }
+  }
