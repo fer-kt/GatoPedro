@@ -12,14 +12,10 @@ $redes: (
     letter-spacing: 0.5rem;
 }
 
-%column{
+
+
+@mixin flex-column{
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-}
-
-%row{
-    display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
 }

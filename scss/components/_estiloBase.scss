@@ -28,9 +28,8 @@ html {
 
   
   .card__estilo {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+    
+    
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -103,6 +102,13 @@ html {
       display: none;
     }
   }
+
+  @media (max-width: 900px) {
+    .section__cards{
+      @include flex-column;
+
+    }
+    }
   
   
   .container {

@@ -27,9 +27,6 @@ main img {
   width: 20rem; }
 
 .card__estilo {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   text-align: center; }
@@ -79,6 +76,12 @@ main img {
     flex-direction: column; }
   .gridFoto {
     display: none; } }
+
+@media (max-width: 900px) {
+  .section__cards {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap; } }
 
 .container {
   margin: 10% auto;
