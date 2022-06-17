@@ -1,4 +1,9 @@
 @charset "UTF-8";
+body h1, body h2 {
+  font-family: "Bad-Boys", serif;
+  text-shadow: 2px 5px 0px #535353;
+  letter-spacing: 0.5rem; }
+
 @font-face {
   font-family: "Bad-Boys";
   src: url("../../assets/fonts/Bad-Boys.ttf.woff") format("woff"), url("../../assets/fonts/Bad-Boys.ttf.svg") format("svg"), url("../../assets/fonts/Bad-Boys.ttf.eot") format("embedded-opentype");
@@ -118,6 +123,11 @@ main img {
   letter-spacing: 0.5rem;
   text-align: center; }
 
+body h1, body h2 {
+  font-family: "Bad-Boys", serif;
+  text-shadow: 2px 5px 0px #535353;
+  letter-spacing: 0.5rem; }
+
 @font-face {
   font-family: "Bad-Boys";
   src: url("../../assets/fonts/Bad-Boys.ttf.woff") format("woff"), url("../../assets/fonts/Bad-Boys.ttf.svg") format("svg"), url("../../assets/fonts/Bad-Boys.ttf.eot") format("embedded-opentype");
@@ -128,10 +138,7 @@ body {
   background-color: black;
   color: #e6e6e6; }
   body h1, body h2 {
-    font-family: "Bad-Boys", serif;
     font-size: 4rem;
-    text-shadow: 2px 5px 0px #535353;
-    letter-spacing: 0.5rem;
     text-align: center; }
   body header img {
     margin-left: auto;
@@ -145,3 +152,15 @@ footer p {
 .footer__icons {
   font-size: 1.5rem;
   margin-right: 1rem; }
+
+.footer__iconsfacebook {
+  color: #3b5998;
+  font-size: 1.5rem;
+  margin-right: 1rem;
+  text-decoration: none; }
+
+.footer__iconsinstagram {
+  color: #fb3958;
+  font-size: 1.5rem;
+  margin-right: 1rem;
+  text-decoration: none; }

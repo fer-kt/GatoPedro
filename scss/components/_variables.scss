@@ -1,2 +1,25 @@
 $color-principal : #e6e6e6;
 $color-secundario : #535353;
+
+$redes: (
+    'facebook':  #3b5998 ,
+    'instagram': #fb3958
+);
+
+%titulo{
+    font-family: "Bad-Boys", serif;
+    text-shadow: 2px 5px 0px $color-secundario;
+    letter-spacing: 0.5rem;
+}
+
+%column{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+%row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}

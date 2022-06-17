@@ -10,3 +10,12 @@ footer {
     font-size: 1.5rem;
     margin-right: 1rem;
   }
+
+  @each $red, $color in $redes {
+    .footer__icons#{$red}{
+      color: $color;
+      font-size: 1.5rem;
+      margin-right: 1rem;
+      text-decoration: none;
+    }
+  }
