@@ -16,6 +16,16 @@ html {
 
   
   .mainAbout{
+    div{
+      
+      display: flex;
+      flex-direction: row;
+      
+      p{
+        margin: 1rem;
+      }
+
+    }
     margin: 0 auto;
     width: 90%;
   }
@@ -26,6 +36,15 @@ html {
     width: 20rem;
   }
 
+  .banerfooter{
+    width: 95%;
+    height: 200px;
+    background-image: url("../assets/pinta.jpg");
+    background-size: cover;
+    background-position: center center;
+    border-radius: 5px;
+    margin: 2rem auto;
+  }
   
   .card__estilo {
     
@@ -60,6 +79,7 @@ html {
   .gridTexto {
     margin: 2rem;
     grid-area: texto;
+    
   }
   
   /*  GRID DE SECTION ESTILOS  */

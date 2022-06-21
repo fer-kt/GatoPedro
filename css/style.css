@@ -21,10 +21,24 @@ html {
 .mainAbout {
   margin: 0 auto;
   width: 90%; }
+  .mainAbout div {
+    display: flex;
+    flex-direction: row; }
+    .mainAbout div p {
+      margin: 1rem; }
 
 main img {
   height: 40rem;
   width: 20rem; }
+
+.banerfooter {
+  width: 95%;
+  height: 200px;
+  background-image: url("../assets/pinta.jpg");
+  background-size: cover;
+  background-position: center center;
+  border-radius: 5px;
+  margin: 2rem auto; }
 
 .card__estilo {
   align-items: center;
@@ -147,6 +161,12 @@ body {
     margin-left: auto;
     margin-right: auto;
     display: block; }
+  body main div {
+    font-size: 1.5rem; }
+    body main div blockquote {
+      font-weight: bold; }
+      body main div blockquote p {
+        text-align: end; }
 
 footer p {
   display: inline-block;
