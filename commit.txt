@@ -1,0 +1,55 @@
+
+- SEO básico
+- Se agregó etiqueta Meta description.
+- Se agregaron etiquetas de Meta keywords.
+- Se agregó Map en _variables.scss para cambiar colores de iconos de redes sociales en los footers 
+$redes: (
+    'facebook':  #3b5998 ,
+    'instagram': #fb3958
+);
+
+@each $red, $color in $redes {
+    .footer__icons#{$red}{
+      color: $color;
+      font-size: 1.5rem;
+      margin-right: 1rem;
+      text-decoration: none;
+    }
+  }
+
+************************************
+- Se agregó mixin con flex y se usó en estilobase.scss para arreglar breakpoint de tablet que rompí agregando sass
+
+@mixin flex-column{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 900px) {
+...
+...
+    .section__cards{
+      @include flex-column;
+
+    }
+    }
+
+************************************
+
+- Agregado extends con la fuente personalizadas para facilitar reutilización 
+
+%titulo{
+    font-family: "Bad-Boys", serif;
+    text-shadow: 2px 5px 0px $color-secundario;
+    letter-spacing: 0.5rem;
+} 
+
+
+ h1, h2 {
+         @extend %titulo;       
+        font-size: 4rem;       
+        text-align: center;
+        }
+
+
